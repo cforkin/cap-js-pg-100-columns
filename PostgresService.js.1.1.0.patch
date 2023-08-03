@@ -1,6 +1,7 @@
+# @cap-js/postgres@1.1.0
 --- node_modules/@cap-js/postgres/lib/PostgresService.js
 +++ node_modules/@cap-js/postgres/lib/PostgresService.js
-@@ -226,18 +226,27 @@
+@@ -266,18 +266,27 @@
      SELECT_expand({ SELECT }, sql) {
        if (!SELECT.columns) return sql
        const queryAlias = this.quote(SELECT.from?.as || (SELECT.expand === 'root' && 'root'))
